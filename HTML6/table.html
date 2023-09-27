@@ -10,13 +10,81 @@
 
 <style type="text/css">
 
+.green{
+   background-color: greenyellow;
+}
+div{
+text-align: center;
+}
+td{
+   border: solid 1px black;
+   padding: 3px;
+   border-spacing: 5px;
+   border-collapse: separate;
+}
+tr{
+   border: 3px black;
+}
+th{
+   background-color: lightgrey;
+   border: solid 1px black;
+}
+colgroup{
+   background-color: #cccccc;
+   width: 25%;
+}
 
+.sched{
+   margin: auto;
+   width: 1016px;
+   height: 278px;
+   border: solid 2px black;
+   padding: 3px;
+   border-spacing: 5px;
+   border-collapse: seperate;
+}
 </style>
 </head>
 <body>
 <div >
-   <table >
-	
+   <table class="sched">
+      <caption>Class Schedule</caption>
+      <colgroup span="1">
+      <tr class="green">
+         <th>Courses</th>
+         <td>Monday</td>
+         <td>Tuesday</td>
+         <td>Wednesday</td>
+         <td>Thursday</td>
+         <td>Friday</td>
+      </tr>
+      <tr>
+         <th>Info 1120</th>
+         <td></td>
+         <td>9-11</td>
+         <td></td>
+         <td>9-11</td>
+         <td rowspan="2"></td>
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from row 1-->
+      </tr>
+      <tr>
+         <th>Math 1010</th>
+         <td colspan="4"></td>
+      </tr>
+      <tr>
+         <th>Info 2420</th>
+         <td colspan="5">Online Available 24/7</td>
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from cell 2-->
+         <!--Spanned from row 1-->
+      </tr>
    </table>
 </div>
 
