@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 
 <head>
@@ -8,8 +8,13 @@
 	
 <title>HTML Practice 6 - Tables</title>
 
-<style type="text/css">
+<style>
 
+caption{
+   text-align: center;
+   color:cornflowerblue;
+   size: 10px;
+}
 .green{
    background-color: greenyellow;
 }
@@ -41,7 +46,6 @@ colgroup{
    border: solid 2px black;
    padding: 3px;
    border-spacing: 5px;
-   border-collapse: seperate;
 }
 </style>
 </head>
@@ -60,20 +64,21 @@ colgroup{
       </tr>
       <tr>
          <th>Info 1120</th>
-         <td></td>
+         <td>&nbsp;</td>
          <td>9-11</td>
-         <td></td>
+         <td>&nbsp;</td>
          <td>9-11</td>
-         <td rowspan="2"></td>
+         <td rowspan="2">&nbsp;</td>
+         
+      </tr>
+      <tr>
+         <th>Math 1010</th>
+         <td colspan="4">&nbsp;</td>
          <!--Spanned from cell 2-->
          <!--Spanned from cell 2-->
          <!--Spanned from cell 2-->
          <!--Spanned from cell 2-->
          <!--Spanned from row 1-->
-      </tr>
-      <tr>
-         <th>Math 1010</th>
-         <td colspan="4"></td>
       </tr>
       <tr>
          <th>Info 2420</th>
@@ -83,7 +88,6 @@ colgroup{
          <!--Spanned from cell 2-->
          <!--Spanned from cell 2-->
          <!--Spanned from cell 2-->
-         <!--Spanned from row 1-->
       </tr>
    </table>
 </div>
