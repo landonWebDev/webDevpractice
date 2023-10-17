@@ -5,6 +5,7 @@
 <title>Flexbox Product Listing Exercise</title>
 
 <style>
+
 html {
   box-sizing: border-box;
 }
@@ -25,6 +26,10 @@ h2 {
 }
 #menu {
   border: 3px solid #783F27;
+  display: flex;
+  align-items: stretch;
+  flex-flow: row wrap;
+  justify-content: center;
 
 }
 section {
@@ -33,6 +38,9 @@ section {
   padding: 20px;
   border: 1px dotted maroon;
   width: 240px;
+  flex-direction: column;
+  display: flex;
+  flex: auto;
 }
 .title {
   background-color: #783F27;
@@ -45,6 +53,10 @@ section {
   padding: 5px;
   width: 100%;
   text-align: center;
+  margin-top: auto;
+}
+.photo {
+  order: -1;
 }
 </style>
 
