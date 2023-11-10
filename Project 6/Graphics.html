@@ -3,22 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
+<style type="text/css">
+    #thumbs, #image {
+    width: 700px;
+    border: solid 1px #000;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: #000;
+    background: #eee;
+    padding: 5px;
+    }
+    #thumbs {
+    margin-top: 10px;
+    }
+    #thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+    }
+    #image{
+    height:400px;
+    }
+    .instructions{
+    font-style:italic;
+    }
+</style>    
 </head>
 
 <body onload="preloadImages()">
-    <div>
+<div>
+<a href=""
+onmouseover="document.getElementById('print').src='Images/Print2.jpg';"
+onmouseout="document.getElementById('print').src='Images/Print1.jpg';">
+<img src="Images/Print1.jpg" alt="Print Page" width="200" height="50"
+id="print"></a>
+</div>
+<div>
     <a href=""
-    onmouseover="document.getElementById('print').src='Images/Print2.jpg';"
-    onmouseout="document.getElementById('print').src='Images/Print1.jpg';">
-    <img src="Images/Print1.jpg" alt="Print Page" width="200" height="50"
-    id="print"></a>
-    </div>
-    <div>
-        <a href=""
-        onmouseover="document.getElementById('logo').src='Images/rentapetLogo.png';"
-        onmouseout="document.getElementById('logo').src='Images/rentapetLogo2.jpg';
-        "> <img src="Images/BackyardBirdLogo.jpg" alt="Logo" id="logo"></a> 
-    </div> 
+    onmouseover="document.getElementById('logo').src='Images/rentapetLogo.png';"
+    onmouseout="document.getElementById('logo').src='Images/rentapetLogo2.jpg';
+    "> <img src="Images/rentapetLogo.png" alt="Logo" id="logo"></a> 
+</div> 
 <p>
 The content of the document goes here . . .
 </p>
