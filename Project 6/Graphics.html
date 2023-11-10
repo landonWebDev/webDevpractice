@@ -26,7 +26,43 @@
     .instructions{
     font-style:italic;
     }
-</style>    
+</style>
+<script type="text/javascript">
+
+    <!-- Begin comment for older browsers//
+    var imgArray = new Array(
+    'FuzzyCatLg.jpg',
+    'HuntingDogsLg.jpg',
+    'Snake1Lg.jpg',
+    'KidsDogLg.jpg',
+    
+    );
+    var titleArray = new Array(
+    'Angry Cat',
+    'Happy Dogs',
+    'Coiled Snake',
+    'Some Kids playing with there dog'
+    );
+    var imgPath = "Images/Fullsize/";
+    function swapImage(imgID) {
+    var theImage = document.getElementById('theImage');
+    var textDiv = document.getElementById('bottomText');
+    var newImg;
+    var textTitle;
+    newImg = imgArray[imgID];
+    theImage.src = imgPath + newImg;
+    textTitle=titleArray[imgID];
+    textDiv.innerHTML = textTitle;
+    }
+    function preloadImages() {
+    for(var i = 0; i < imgArray.length; i++) {
+    var tmpImg = new Image;
+    tmpImg.src = imgPath + imgArray[i];
+    }
+    }
+    // End comment for older browsers -->
+    
+    </script>     
 </head>
 
 <body onload="preloadImages()">
@@ -43,6 +79,26 @@ id="print"></a>
     onmouseout="document.getElementById('logo').src='Images/rentapetLogo2.jpg';
     "> <img src="Images/rentapetLogo.png" alt="Logo" id="logo"></a> 
 </div> 
+<p class="instructions">
+
+    <div id="thumbs">
+    <img src="Images\Thumbnails\Image1sm.jpg" alt="AngryCat"
+   onmouseover="swapImage(0);" />
+    <img src="Images\Thumbnails\Image2sm.jpg" alt="HappyDogs"
+   onmouseover="swapImage(1);" />
+    <img src="Images/Thumbnails/Image3sm.jpg" alt="CoiledSnakes"
+   onmouseover="swapImage(2);" />
+    <img src="Images\Thumbnails\Image4sm.jpg" alt="KidsAndDog"
+   onmouseover="swapImage(3);" />
+   
+    <br />
+   
+    </div>
+    <div id="image">
+   
+    <img id="theImage" src="Images/Fullsize/FuzzyCatLg.jpg" alt="Angry Cat" />
+    <h3 id="bottomText">Brave Bald Eagle</h3>
+    </div>
 <p>
 The content of the document goes here . . .
 </p>
