@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="myscripts.js"></script>
+<link rel="stylesheet" href="mystyles.css" type="text/css">
+</head>
+
+<body onload="preloadImages()">
+    <div id="container">
+    <div>
+    <a href=""
+    onmouseover="document.getElementById('print').src='Images/Print2.jpg';"
+    onmouseout="document.getElementById('print').src='Images/Print1.jpg';">
+    <img src="Images/Print1.jpg" alt="Print Page" width="200" height="50"
+    id="print"></a>
+    </div>
+    
+    
+        
+    <header>
+        <link>
+        <div>
+            <a href=""
+            onmouseover="document.getElementById('logo').src='Images/rentapetLogo.png';"
+            onmouseout="document.getElementById('logo').src='Images/rentapetLogo2.jpg';
+            "> <img src="Images/rentapetLogo.png" alt="Logo" id="logo"></a> 
+        </div>
+        <img src="Images\RentAPet-BANNER.jpg" alt="Pet Banner">
+        <nav></nav>
+    </header>
+
+    <section>
+        <img src="Images/backimage.jpg" alt="background">
+        <article>
+            <p>Welcome to Rent A Pet! 
+                If you love to interact with pets like we do, you should enjoy looking around this site.  Take a look at our Pet Profiles and take the opportunity to complete our survey.</p>
+            <p class="instructions">
+    
+                <div id="thumbs">
+                <img src="Images/Thumbnails/Image1sm.jpg" alt="AngryCat"
+               onmouseover="swapImage(0);" />
+                <img src="Images/Thumbnails/Image2sm.jpg" alt="HappyDogs"
+               onmouseover="swapImage(1);" />
+                <img src="Images/Thumbnails/Image3sm.jpg" alt="CoiledSnakes"
+               onmouseover="swapImage(2);" />
+                <img src="Images/Thumbnails/Image4sm.jpg" alt="KidsAndDog"
+               onmouseover="swapImage(3);" />
+               
+                <br />
+               
+                </div>
+                <div id="image">
+               
+                <img id="theImage" src="Images/Fullsize/FuzzyCatLg.jpg" alt="Angry Cat" />
+                <h3 id="bottomText">Angry Cat</h3>
+                </div>
+        </article>
+    </section>
+    
+    
+    <footer></footer>
+    <p>
+    The content of the document goes here . . .
+    </p>
+    </div>
+</body>
+</html>
