@@ -14,7 +14,11 @@ body {
 .thumbnailright {
     float: right;
     padding-left: 10px;
-}   
+}
+
+.print {
+    
+}
 
 header {
     color: #8A888C;
