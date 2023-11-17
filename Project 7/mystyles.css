@@ -59,6 +59,14 @@ header {
 .nav-button {
     height: 40px;
     cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(165, 221, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .nav-button a {
@@ -66,7 +74,12 @@ header {
 }
 
 .nav-button:hover {
-    opacity: 0.8;
+    opacity: 0.6;
+    border: 1px solid rgb(165, 221, 179);    
+}
+
+.nav-button:hover a {
+    color: blue;
 }
 
 section {
