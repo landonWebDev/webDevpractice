@@ -1,0 +1,239 @@
+﻿
+/********** tablets, phones and screen sizes 1024px ********************/
+.mobile-indicator-1024 {
+	 display:block;
+}
+.mobile-indicator-780 {
+	 display:none;
+	 
+}
+.mobile-indicator-540 {
+	 display:none;
+}
+.mobile-indicator-480 {
+	 display:none;
+}
+.mobile-indicator-320{
+	 display:none;
+}
+
+
+
+#container
+{
+    width:900px;
+      margin:0 auto;
+}
+
+#masthead
+{
+    width:100%;
+
+}
+
+#navigation
+{
+    display: inline;
+	width:100%;
+}
+
+#maincontent
+{
+    width:100%;
+}
+
+#leftcolumn
+{
+    width:600px;
+    float:left;
+}
+
+#rightcolumn
+{
+    width:300px;
+    float:left;
+}
+
+#footer
+{
+    width:100%;
+    height:75px;
+}
+
+#navigation ul{
+	margin:0;
+	padding:0;
+}
+
+#navigation li{
+	display:inline;
+}
+
+
+#masthead h1
+{
+	display:inline;
+}
+
+
+/********** tablets, phones and screen sizes 780px ********************/
+
+@media only screen and (max-width: 780px){
+	#container{
+		width: 750px;
+	}
+	#masthead, #footer{
+		width: 100%
+	}
+	#maincontent{
+		background-image: url();
+		width: 100%;
+		overflow: hidden;
+	}
+	#leftcolumn{
+		width:500px;
+		float: left;
+	}
+	#leftcolumn img{
+		width: 60%;
+	}
+	#rightcolumn{
+		width: 250px;
+		float: left;
+	}
+	#rightcolumn img{
+		width: 60%
+	}
+	
+	.mobile-indicator-1024 {
+	 	display:none;
+	}
+	.mobile-indicator-780 {
+		 display:block;
+		 
+	}
+	.mobile-indicator-540 {
+	 	display:none;
+	}
+	.mobile-indicator-480 {
+	 	display:none;
+	}
+	.mobile-indicator-320{
+	 	display:none;
+	}
+
+
+	
+	 
+	
+}
+
+/********** tablets, phones and screen sizes 540px ********************/
+
+@media only screen and (max-width: 540px){
+	#container{
+		width: 500px;
+	}
+	#navigation, #masthead, #maincontent, #leftcolumn, #rightcolumn, #footer{
+		width: 100%
+	}
+	#maincontent{
+		background-image: none;
+		Background-color: #FFFFFF;
+	}
+	#navigation li{
+		display: block;
+		width: 100%
+	}
+	#leftcolumn img, #rightcolumn img{
+		width: 50%;
+	}
+	
+	.mobile-indicator-1024 {
+	 	display:none;
+	}
+	.mobile-indicator-780 {
+	 	display:none;
+	}
+	.mobile-indicator-540 {
+	 	display:block;
+	}
+	.mobile-indicator-480 {
+	 	display:none;
+	}
+	.mobile-indicator-320{
+	 	display:none;
+	}
+
+		
+
+	
+}
+
+/********** Smartphones landscape and screen sizes 480px ********************/
+
+@media only screen and (max-width: 480px){
+
+	#container{
+		width: 450px;
+	}
+	#navigation, #masthead, #leftcolumn, #rightcolumn, #footer{
+		width: 100%
+	}
+	#leftcolumn img, #rightcolumn img{
+		width: 45%;
+	}
+	
+	.mobile-indicator-1024 {
+	 	display:none;
+	}
+	.mobile-indicator-780 {
+	 	display:none;
+	}
+	.mobile-indicator-540 {
+	 	display:none;
+	}
+	.mobile-indicator-480 {
+	 	display:block;
+	}
+
+
+	
+}
+
+/********** Smartphones portrait and screen sizes 320px ********************/
+
+@media only screen and (max-width:320px){
+
+	#container{
+		width: 300px;
+	}
+	#navigation, #masthead, #leftcolumn, #rightcolumn, #footer{
+		width: 100%
+	}
+	#leftcolumn img, #rightcolumn img{
+		width: 45%;
+	}
+	
+	.mobile-indicator-1024 {
+	 	display:none;
+	}
+	.mobile-indicator-780 {  
+	 	display:none;
+	}
+	.mobile-indicator-540 {
+	 	display:none;
+	}
+	.mobile-indicator-480 {
+	 	display:none;
+	}
+	.mobile-indicator-320{
+	 	display:block;
+	}
+
+	
+		
+	
+}
+
+
