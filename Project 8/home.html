@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="myscripts.js"></script>
+<link rel="stylesheet" href="mystyles.css" type="text/css">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
+</head>
+
+<body onload="preloadImages()">
+    <div id="container">
+        <div class="print">
+            <a  href=""
+                onmouseover="document.getElementById('print').src='Images/Print2.jpg';"
+                onmouseout="document.getElementById('print').src='Images/Print1.jpg';"
+            >
+                <img src="Images/Print1.jpg" alt="Print Page" width="100" height="20"
+                id="print">
+            </a>
+        </div>
+            
+        <header>
+            <a  class="logo"
+                onmouseover="document.getElementById('logo').src='Images/rentapetLogo.png';"
+                onmouseout="document.getElementById('logo').src='Images/rentapetLogo2.jpg';"
+            >
+                <img src="Images/rentapetLogo.png" alt="Logo" id="logo">
+            </a> 
+            <img class="banner-image" src="Images\RentAPet-BANNER.jpg" alt="Pet Banner">
+            <nav class="nav-links">
+                <div class="nav-button">
+                    <a href="#home">Home</a>
+                </div>
+                <div class="nav-button">
+                    <a href="#about-us">About Us</a>
+                </div>
+                <div class="nav-button">
+                    <a href="#tributes">Tributes</a>
+                </div>
+                <div class="nav-button">
+                    <a href="#survey">Survey</a>
+                </div>
+                <div class="nav-button">
+                    <a href="#favorites">Favorites</a>
+                </div>
+                
+            </nav>
+        </header>
+
+        <section>
+            <article>
+                <h2 class="title">Welcome to Rent A Pet!</h2>
+                <div class="subtext"> 
+                    If you love to interact with pets like we do, you should enjoy looking around this site.  
+                    Take a look at our Pet Profiles and take the opportunity to complete our survey.
+                </div>
+                <div class="instructions">    
+                    <div id="thumbs">
+                        <img src="Images/Thumbnails/Image1sm.jpg" alt="AngryCat"
+                    onmouseover="swapImage(0);" />
+                        <img src="Images/Thumbnails/Image2sm.jpg" alt="HappyDogs"
+                    onmouseover="swapImage(1);" />
+                        <img src="Images/Thumbnails/Image3sm.jpg" alt="CoiledSnakes"
+                    onmouseover="swapImage(2);" />
+                        <img src="Images/Thumbnails/Image4sm.jpg" alt="KidsAndDog"
+                    onmouseover="swapImage(3);" />               
+                        <br />               
+                    </div>
+                    <div id="image">               
+                        <img id="theImage" src="Images/Fullsize/FuzzyCatLg.jpg" alt="Angry Cat" />
+                        <h3 id="bottomText">Angry Cat</h3>
+                    </div>
+                </div>
+                
+                <div class="tribute-section">
+                    <img class="tribute-image thumbnailright" src="Images/GermanShephard3.jpg" alt="basset-hound" width="200" height="199">
+                    <div class="tribute-text">
+                            I'm a single college guy and live in an apartment with 3 other guys.  I always wanted to have a large breed of dog that would be a companion to take running or play catch with in the park.  With the help of Rent A Pet, I found Kamaikaze, a German Shephard. more >>   
+                    </div>
+                </div>
+            </article>
+        </section>        
+        
+        <footer>
+            <div class="email">lg074082@stu.provo.edu</div>
+            <div class="disclaimer">This
+                web site has been created solely for educational
+                purposes.</div>
+        </footer>    
+    </div>
+</body>
+</html>
