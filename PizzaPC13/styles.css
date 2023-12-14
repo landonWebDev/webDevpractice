@@ -1,0 +1,10 @@
+ol, ul { 
+    list-style-type: none;
+     }
+#perens{
+    font-style:  italic;
+}
+.flex{
+   display: flex;
+   padding-left: 40px; 
+}
