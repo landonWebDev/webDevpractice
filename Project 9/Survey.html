@@ -51,12 +51,76 @@
         </header>
 
         <section>
-            <form>
+            <h2>Rent A Pet Survey</h2>
+            <p>This form is used to see how we can improve our bussiness and make it even better. <br>If you complete this form with an email you will be signing up for monthly emails from <br>our bussiness Rent A Pet.</p>
+            <form action="FormToEmail.php" method="post" name="CustomerSurvey" target="_blank">
                 <fieldset>
                     <fieldset>
-                    <legend>How was the experience?</legend>
+                        <legend>Basic Information</legend>
+                        <label for="Fname">First Name:</label>
+                        <input id="Fname" name="Fname" class="text" type="text">
+                        <br>
+                        <label for="Lname">Last Name:</label>
+                        <input id="Lname" name="Lname" class="text" type="text">
+                        <br>
+                        <label for="phone">Phone Number:</label>
+                        <input id="phone" name="phone" class="text" type="text">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" class="text" type="text">
                     </fieldset>
-                </fieldset>
+                    <fieldset>
+                        <legend>Review</legend>
+                        <br>
+                        <legend>How many pets did you have?</legend>
+                        <label for="petnum">1</label>
+                        <input type="radio" name="petnum" id="petnum">
+                        <br>
+                        <label for="petnum">2</label>
+                        <input type="radio" name="petnum" id="petnum">
+                        <br>
+                        <label for="petnum">3</label>
+                        <input type="radio" name="petnum" id="petnum">
+                        <br>
+                        <label for="petnum">more than 3</label>
+                        <input type="radio" name="petnum" id="petnum">
+                        <br>
+                        <legend>What Animal Did You have?(can choose more than one)</legend>
+                        <div class="animal">    
+                            <label for="animal">Dog</label>
+                            <input type="checkbox" name="animal" id="animal">
+                            <br>
+                            <label for="animal">Cat</label>
+                            <input type="checkbox" name="animal" id="animal">
+                            <br>
+                            <label for="animal">Horse</label>
+                            <input type="checkbox" name="animal" id="animal">
+                            <br>
+                            <label for="animal">Snake</label>
+                            <input type="checkbox" name="animal" id="animal">
+                            <br>
+                            <label for="animal">Pig</label>
+                            <input type="checkbox" name="animal" id="animal">
+                        </div>
+                        <br>
+                        <label for="review">On a scale of 1 to 5 how was your visit?</label>
+                        <select id="review" name="review">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <br>
+                        <div class="flex">
+                            <label for="textdescription">Text Description(Optional)</label>
+                            <textarea id="textdescription" name="textdescription" rows="5" cols="45" placeholder="Tell us more about your review."></textarea>
+                        </div>
+                        
+                    </fieldset>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </fieldset>   
             </form>
         </section>        
         
